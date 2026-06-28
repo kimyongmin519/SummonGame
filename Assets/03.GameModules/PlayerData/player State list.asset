@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f368a85338ff44b293992295a542a882, type: 3}
+  m_Name: player State list
+  m_EditorClassIdentifier: Assembly-CSharp::Player.FSM.PlayerStateListSO
+  stateEnum: PlayerStateEnum
+  states:
+  - {fileID: 11400000, guid: 2da2ad3485f01cf4193e359c471d2159, type: 2}
+  - {fileID: 11400000, guid: 1e2811f31cd14394685c167c94cfb517, type: 2}

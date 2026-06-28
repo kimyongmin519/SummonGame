@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace CoreSystems
 {
-    [CreateAssetMenu(fileName = "Player input", menuName = "Core/Player input", order = 0)]
+    [CreateAssetMenu(fileName = "Player input", menuName = "CoreSystems/Player input", order = 0)]
     public class PlayerInputSO : ScriptableObject, Controls.IPlayerActions
     {
         private Controls _controls;
@@ -33,7 +33,7 @@ namespace CoreSystems
 
         public void OnMove(InputAction.CallbackContext context)
         {
-            
+            OnMoveChanged?.Invoke(context.ReadValue<Vector2>());
         }
 
         public void OnInteract(InputAction.CallbackContext context)
