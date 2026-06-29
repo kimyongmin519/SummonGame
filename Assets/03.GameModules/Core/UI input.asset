@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e5a0ab0d47424a87d8737cbc6ca34f, type: 3}
   m_Name: UI input
   m_EditorClassIdentifier: Assembly-CSharp::CoreSystems.UIInputSO
-  <MouseSensitivity>k__BackingField: 1
+  <MouseSensitivity>k__BackingField: 0.1

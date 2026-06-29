@@ -36,6 +36,8 @@ namespace Player
             _characterController = _player.GetComponent<CharacterController>();
 
             _player.UIInput.OnMousePosChanged += HandleMouseDeltaX;
+            
+            _gravity = Physics.gravity.y;
         }
 
         private void HandleMouseDeltaX(Vector2 pos)
@@ -57,7 +59,6 @@ namespace Player
         public void SetMoveDir(Vector3 moveDirection)
         {
             _moveDirection = moveDirection;
-            Debug.Log(moveDirection);
         }
         
         public void SetCurrentSpeed(float speed)
@@ -105,6 +106,7 @@ namespace Player
             direction.y = 0;
             _player.transform.forward = direction.normalized;
         }
+        
 
         public void StopImmediately(bool stopX, bool stopY, bool stopZ)
         {

@@ -1,9 +1,13 @@
 using Agents;
+using UnityEngine;
 
 namespace Player.FSM.States
 {
     public abstract class AbstractPlayerState
     {
+        protected static readonly int MoveXHash = Animator.StringToHash("MoveX");
+        protected static readonly int MoveZHash = Animator.StringToHash("MoveZ");
+        
         protected Player _player;
         protected IMover _mover;
         protected IRenderer _renderer;

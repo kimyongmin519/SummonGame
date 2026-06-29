@@ -11,7 +11,6 @@ namespace CoreSystems
 
         public event Action<Vector2> OnMoveChanged;
         public event Action OnCrunchPressed;
-        public event Action OnCrunchReleased;
         public event Action<bool> OnInteractPressed;
 
         private Vector2 _moveDir;
@@ -42,6 +41,8 @@ namespace CoreSystems
 
         public void OnCrouch(InputAction.CallbackContext context)
         {
+            if (context.performed)
+                OnCrunchPressed?.Invoke();
         }
 
         public void OnSprint(InputAction.CallbackContext context)
