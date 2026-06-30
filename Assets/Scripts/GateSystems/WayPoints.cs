@@ -1,7 +1,7 @@
 using Reflex.Core;
 using UnityEngine;
 
-namespace CoreSystems.MapSystems
+namespace MapSystems
 {
     public class WayPoints : MonoBehaviour, IInstaller
     {

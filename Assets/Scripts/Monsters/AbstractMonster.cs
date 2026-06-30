@@ -1,7 +1,7 @@
 using System;
 using Agents;
 using CoreSystems.AnimationSystems;
-using CoreSystems.MapSystems;
+using MapSystems;
 using Monsters.BT;
 using Monsters.NavAgentSystems;
 using Reflex.Attributes;

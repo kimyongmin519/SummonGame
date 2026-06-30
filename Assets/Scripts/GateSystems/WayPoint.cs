@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CoreSystems.MapSystems
+namespace MapSystems
 {
     public class WayPoint : MonoBehaviour
     {

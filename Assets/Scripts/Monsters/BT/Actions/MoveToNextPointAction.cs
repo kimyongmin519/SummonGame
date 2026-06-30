@@ -1,5 +1,5 @@
 using System;
-using CoreSystems.MapSystems;
+using MapSystems;
 using Monsters.NavAgentSystems;
 using Unity.Behavior;
 using Unity.Properties;
