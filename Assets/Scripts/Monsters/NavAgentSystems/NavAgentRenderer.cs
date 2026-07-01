@@ -1,3 +1,4 @@
+using System;
 using Agents;
 using KimLIb.ModuleSystems;
 using UnityEngine;
@@ -60,6 +61,11 @@ namespace Monsters.NavAgentSystems
                 agentTypeID = _navAgent.agentTypeID,
                 areaMask = _navAgent.areaMask
             };
+        }
+
+        private void Update()
+        {
+            ForceRotationControl();
         }
 
         private void OnAnimatorMove()
